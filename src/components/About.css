@@ -1,0 +1,15 @@
+.about {
+  line-height: 2;
+  text-align: left;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding: 20px;
+}
+
+.aboutp::first-letter {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+}
