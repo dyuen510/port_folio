@@ -6,6 +6,7 @@ import Covid19 from "./images/covid19.png";
 import Hiking from "./images/hiking.png";
 import Liri from "./images/liri.png";
 import ProjectChinatown from "./images/projectchinatown.png";
+import Spotify from './images/spotify.png';
 
 const Project = () => {
   return (
@@ -118,6 +119,26 @@ const Project = () => {
         >
           <img src={ProjectChinatown} width="500" height="350" alt="img" />
         </a>
+      </div>
+      <div className="project">
+        <div className="projectImg">
+          <a
+            href="https://spotify-clone-b6272.firebaseapp.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img src={Spotify} width="500" height="350" alt="img" />
+          </a>
+        </div>
+        <div className="description">
+          <h3>Spotify Clone</h3>
+          <p>
+            FrontEnd clone of Spotify using React and deploying on firebase.
+            Utilized useReducer and useContext hooks in react which is similar to redux with datalayers.
+            Usage of spotify authorization in order to login to the app which would display something similar to 
+            spotify user's playlist and discover weekly section. 
+          </p>
+        </div>
       </div>
     </div>
   );
