@@ -46,7 +46,7 @@ img:hover {
   transform: scale(1.08);
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 905px) {
   .project {
     display: inline-block;
     /* object-fit: contain; */
