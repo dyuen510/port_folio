@@ -7,10 +7,12 @@ import Hiking from "./images/hiking.png";
 import Liri from "./images/liri.png";
 import ProjectChinatown from "./images/projectchinatown.png";
 import Spotify from './images/spotify.png';
+import Footer from './Footer.js';
 
 const Project = () => {
   return (
     <div className="container">
+      <div className = 'banner'></div>
       <div className="project">
         <div className="projectImg">
           <a
@@ -18,7 +20,7 @@ const Project = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <img src={Netflix} width="500" height="350" alt="img" />
+            <img src={Netflix} width="500" height="350" alt="img" border-radius='25px;' />
           </a>
         </div>
         <div className="description">
@@ -140,6 +142,7 @@ const Project = () => {
           </p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

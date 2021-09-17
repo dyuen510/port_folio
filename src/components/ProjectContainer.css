@@ -5,5 +5,7 @@
 }
 
 hr {
+  margin-top: 30px;
   opacity: 0.3;
+  width: 100%;
 }

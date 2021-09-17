@@ -1,33 +1,112 @@
 import React from "react";
 import "./About.css";
+import Self from "./images/self.png";
+import AboutImg1 from './images/aboutImg1.JPG';
+import AboutImg2 from './images/aboutImg2.jpg';
+import AboutImg3 from './images/aboutImg3.jpg';
+import AboutImg4 from './images/aboutImg4.jpg';
+import AboutImg5 from './images/aboutImg5.jpg';
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedin,
+  faInstagram,
+  faGithub,
+  
+} from "@fortawesome/free-brands-svg-icons";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faEnvelope, faKey } from '@fortawesome/free-solid-svg-icons';
+
+import Resume from './images/Resume.pdf';
+import Footer from './Footer.js';
 
 const About = () => {
+  library.add(faEnvelope, faKey);
   return (
     <div className="about">
-      <p className="aboutp">
-        Front End Web Developer with a background in Business Administration
-        within the finance industry and a dedication to continuous learning with
-        hands on experiences. Known as an individual with great attention to
-        detail, positive attitude, and calm demeanor in high stress situations.
-        I have always enjoyed seeing others learn by doing and really believe in
-        peer to peer teaching. Seeing my parents filled with astonishment over
-        disruptive and new technology made me motivated professionally to be
-        part of a team to create innovative products.
+      <hr />
+      <div className ='firstContainer'>
+      <div className='profileImage'>
+      <img
+        src={Self}
+        style={{ width: 350, height: 350}}
+      />
+      </div>
+      <div className='socialLinks'>
+      <a
+        href="https://www.linkedin.com/in/david-yuen-549bb3b5/"
+        className="linkedInSocial"
+      >
+        <FontAwesomeIcon icon={faLinkedin} size="2x" color="blue" />
+      </a>
+      <a
+        href="https://www.instagram.com/dave.yuen/"
+        className="instagramSocial"
+      >
+        <FontAwesomeIcon icon={faInstagram} size="2x" color="brown" />
+      </a>
+      <a href="https://github.com/dyuen510" className="githubSocial">
+        <FontAwesomeIcon icon={faGithub} size="2x" color="black" />
+      </a>
+      <a href="mailto:davidyuen0305@gmail.com" className="mailSocial">
+        <FontAwesomeIcon icon={faEnvelope} size="2x" color="black" />
+      </a>
+      
+      
+      </div>
+      
+      <div className='personalStatement'>
+      <p className="aboutH">
+       welcome, i'm david
       </p>
       <p className="aboutp">
-        My past projects have focused mainly at the full functionality of the
-        applications using MERN which aims to improve productivity of users.
-        Multiple projects during my undergrad have prepared me to be a great
-        team player by motivating my group to get started and equally share the
-        workload.
+      I'm a front end web developer and a UX designer with a background in business that is passionate 
+      about creating as well as designing products that improves user experience.
       </p>
       <p className="aboutp">
-        I earned a certificate in Full Stack Web Development from UC Berkeley
-        with developed skills in Javascript, CSS, ReactJS and databases such as
-        MySQL and MongoDB. I am excited to leverage the technical skills with my
-        relationship building skills in the future to create outstanding user
-        experiences in a fast paced environment with a quality driven team.
+      Other passions of mine includes biking around to explore new breweries, hiking here and there, and traveling to experience different
+      cultures while trying local cuisines. 
       </p>
+
+      <p className='aboutF'>
+        - Based in San Francisco Bay Area
+      </p>
+
+      <button className="button">
+      <a className="button" href={Resume} download>
+      Download Resume
+    </a>
+</button>
+  <p className='fileSize'>File Size: 78KB</p>
+      </div>
+      </div>
+      <div className='midLine'>
+      <hr />
+      </div>
+      <div className='aboutImages'>
+      <img
+        src={AboutImg1}
+        style={{ width: 250, height: 350, margin:'20px'}}
+      />
+            <img
+        src={AboutImg2}
+        style={{ width: 250, height: 350, margin:'20px'}}
+      />
+      <img
+        src={AboutImg3}
+        style={{ width: 250, height: 350, margin:'20px'}}
+      />
+      <img
+        src={AboutImg4}
+        style={{ width: 390, height: 280, margin:'20px'}}
+      />
+      <img
+        src={AboutImg5}
+        style={{ width: 390, height: 280, margin:'20px'}}
+      />
+      </div>
+      <hr />
+      <Footer />
     </div>
   );
 };

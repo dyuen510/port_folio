@@ -1,19 +1,44 @@
 .App {
   text-align: center;
+  justify-content: center;
   /* background-color: black; */
 }
 
+.routesContainer {
+  /* margin: 20px; */
+  color: black;
+  padding: 30px;
+  /* position: relative; */
+  /* position: fixed; */
+  /* right: 90px; */
+  text-align: center;
+  width: 80%;
+  /* background-color: blue; */
+  margin: auto;
+  /* position: fixed; */
+  top: 0;
+  z-index: 2;
+}
+
 .routes {
-  margin: 20px;
-  color: white;
+  position: fixed;
+}
+
+.nameHeader {
+  float: left;
+  /* margin-left: 120px; */
 }
 
 .link {
-  margin: 10px;
+  margin: 50px;
   text-decoration: none;
-  font-size: 14px;
-  text-shadow: 1px 1px 15px white;
-  color: white;
+  font-size: 15px;
+  /* text-shadow: 1px 1px 15px black; */
+  color: black;
+  font-family: monospace;
+  padding-bottom: 30px;
+  /* position: fixed; */
+  z-index: 2;
 }
 
 .link:hover {
@@ -21,18 +46,31 @@
   font-size: 16px;
 }
 
-.topDeck {
-  height: 15vh;
-  background-image: url("./components/images/stars.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position-y: center;
-  background-position-x: calc(50%);
-  opacity: 0.7;
+.link:focus {
+  color: blue;
 }
 
+@media (max-width: 870px) {
+  .nameHeader {
+    display: none;
+  }
+  .routes {
+    width: auto;
+  }
+}
 @media (max-width: 320px) {
   .link {
     margin: 3px;
+  }
+  .nameHeader {
+    display: none;
+  }
+  .routes {
+    /* background-color: yellow; */
+    /* max-width: 100%; */
+    padding: 0px;
+    padding-top: 30px;
+    width: 100%;
+    /* margin: 0px; */
   }
 }

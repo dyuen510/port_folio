@@ -1,17 +1,21 @@
 .container {
   display: inline-block;
-  color: white;
-  width: 98%;
+  /* color: white; */
+  /* width: 98%; */
   margin-top: 50px;
 }
 
 .project {
   display: inline-flex;
   justify-content: space-evenly;
-  width: 90%;
+  /* width: 90%; */
   margin-bottom: 35px;
 }
 
+.projectImg {
+  overflow: hidden;
+  border-radius: 20px;
+}
 .description {
   width: 40%;
   line-height: 2;
@@ -38,12 +42,16 @@ h3 {
   padding: 20px; */
 }
 
-img {
+/* img {
   transition: transform 450ms;
 }
 
 img:hover {
   transform: scale(1.08);
+} */
+.banner {
+  background-color: blue;
+  height: 20vh;
 }
 
 @media (min-width: 320px) and (max-width: 905px) {

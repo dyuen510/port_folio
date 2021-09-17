@@ -1,45 +1,36 @@
 import React from "react";
 import "./App.css";
-import Nav from "./components/Nav";
-import Project from "./components/Project";
-import ProjectContainer from "./components/ProjectContainer";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import About from "./components/About";
-import Application from "./components/Application";
-// import Pdf from "./components/images/Resume.pdf";
-import ResumePdf from "./components/Resume.js";
+import Work from './components/Work';
+import Uxdesign from './components/Uxdesign.js';
 
 function App() {
+
+ 
   return (
     <div className="App">
-      <Nav />
-      <div className="topDeck"></div>
-      <div className="routes">
+      <div className="routesContainer">
+        <h1 className='nameHeader'> David Yuen</h1>
         <Router className="routes">
           <Link to="/" className="link">
-            Home
+            Web Development
           </Link>
-          <Link to="/about-me" className="link">
+          <Link to="/uxDesign" className="link">
+            UX Design
+          </Link>
+          <Link to="/aboutme" className="link">
             About
           </Link>
-          <Link to="/applications" className="link">
-            Applications
-          </Link>
-          <Link to="/projects" className="link">
-            Projects
-          </Link>
-          <Link to="/resume" className="link">
-            Resume
-          </Link>
-          <Route path="/resume" component={ResumePdf} />
-          <Route path="/about-me" component={About} />
-          <Route path="/applications" component={Application} />
-          <Route path="/projects" component={ProjectContainer} />
+
+          <Route exact path="/" component={Work} />
+          <Route exact path="/uxDesign" component={Uxdesign} />
+          <Route exact path="/aboutme" component={About} />
         </Router>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

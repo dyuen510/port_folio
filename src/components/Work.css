@@ -1,0 +1,130 @@
+h1 {
+  color: black;
+  font-size: 15px;
+  font-family: monospace;
+  margin-top: 5px;
+  margin-left: 30px;
+  position: relative;
+  /* text-shadow: 1px 1px 15px white; */
+}
+
+.webProjects {
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  /* background-color: blue; */
+  position: relative;
+  /* left: 0; */
+  justify-content: space-around;
+  /* padding: 50px; */
+}
+
+.rounded_corners {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.sc-GMQeP {
+  position: relative !important;
+  margin: -100;
+}
+/* .imageStyle:hover {
+  -webkit-filter: brightness(20%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+} */
+
+/* .imageStyle:hover:after {
+  position: absolute;
+  top: 10;
+
+  right: 0;
+ 
+  content: "hello world";
+  color: white;
+} */
+/* .workGrid:hover .info {
+  display: block;
+  position: absolute;
+  top: 1; */
+
+/* } */
+
+.workGrid {
+  margin: 50px 0px 15px 0px;
+  border-radius: 30px;
+  position: relative;
+  /* width: 500px; */
+}
+
+.overlay {
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 20;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+.overlay__blur {
+  backdrop-filter: blur(5px);
+}
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay:hover > * {
+  transform: translateY(0);
+}
+
+.image__title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.image__description {
+  font-size: 14px;
+  margin: 10px;
+  margin-top: 0.25em;
+}
+
+.image__date {
+  font-size: 13px;
+  font-style: italic;
+}
+.Home {
+  /* display: inline-block; */
+  /* float: left; */
+  /* float: left; */
+  /* display: block; */
+  justify-content: space-around;
+  /* margin-left: 140px; */
+  /* margin: 50px; */
+}
+/* 
+a {
+  position: relative;
+  margin: 20px;
+  margin-top: 150px;
+} */
+
+@media (max-width: 600px) {
+  .wrapper {
+    display: none !important;
+  }
+}
