@@ -1,0 +1,32 @@
+.f_paragraph {
+  font-size: 16px;
+}
+
+.features_info {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.find_desc {
+  margin: 5px;
+  margin-top: 40px;
+  width: 80%;
+}
+
+.title {
+  padding: 5px;
+  background-color: darkslategray;
+  color: white;
+}
+
+.whaleMock {
+  width: 500px;
+  height: 200px;
+}
+
+@media (max-width: 870px) {
+  .whaleMock {
+    width: 400px;
+    height: 150px;
+  }
+}

@@ -17,7 +17,7 @@ import {
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faEnvelope, faKey } from '@fortawesome/free-solid-svg-icons';
 
-import Resume from './images/Resume.pdf';
+import Resume from './resume/Resume.pdf';
 import Footer from './Footer.js';
 
 const About = () => {
@@ -29,7 +29,7 @@ const About = () => {
       <div className='profileImage'>
       <img
         src={Self}
-        style={{ width: 350, height: 350}}
+        style={{ width: 300, height: 300}}
       />
       </div>
       <div className='socialLinks'>
@@ -46,10 +46,10 @@ const About = () => {
         <FontAwesomeIcon icon={faInstagram} size="2x" color="brown" />
       </a>
       <a href="https://github.com/dyuen510" className="githubSocial">
-        <FontAwesomeIcon icon={faGithub} size="2x" color="black" />
+        <FontAwesomeIcon icon={faGithub} size="2x" color="gray" />
       </a>
       <a href="mailto:davidyuen0305@gmail.com" className="mailSocial">
-        <FontAwesomeIcon icon={faEnvelope} size="2x" color="black" />
+        <FontAwesomeIcon icon={faEnvelope} size="2x" color="gray" />
       </a>
       
       

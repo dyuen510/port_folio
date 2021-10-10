@@ -1,0 +1,60 @@
+.snack_Container {
+  background-color: black;
+  color: white;
+  margin-top: 100px;
+}
+
+.w_title {
+  color: white;
+}
+
+.mockup_display {
+  opacity: 0.9;
+}
+
+.project_Container {
+  margin: 15px;
+}
+
+.endMockUp {
+  width: 90%;
+  height: 400px;
+}
+
+.paperImage {
+  width: 500px;
+  height: 500px;
+}
+
+@media (min-width: 2560px) {
+  .endMockUp {
+    height: 700px;
+  }
+}
+@media (max-width: 1024px) {
+  .snackLogo {
+    width: 400px;
+  }
+}
+
+@media (max-width: 870px) {
+  .endMockUp {
+    width: 400px;
+    height: 200px;
+  }
+
+  p {
+    font-size: 8px;
+  }
+
+  .f_paragraph {
+    font-size: 10px;
+  }
+
+  .paperImage {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 320px) {
+}

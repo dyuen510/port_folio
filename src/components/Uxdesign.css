@@ -14,6 +14,31 @@
   justify-content: space-around;
 }
 
+.ux_link {
+  margin: 20px;
+  text-decoration: none;
+  font-size: 13px;
+
+  /* text-shadow: 1px 1px 15px black; */
+  color: black;
+  font-family: monospace;
+  display: inline-flex;
+  flex-wrap: wrap;
+  z-index: 2;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 18px;
+}
+
+.ux_link:hover {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.ux_link:focus {
+  color: blue;
+}
+
 p {
   font-family: monospace;
 }
@@ -41,29 +66,6 @@ p {
   /* position: relative; */
   /* justify-content: center; */
   text-align: center;
-}
-
-.acc1 {
-  background-color: green;
-  color: white;
-  width: 50px;
-  border: 1px solid green;
-  border-radius: 50%;
-  margin: 30px;
-  margin-left: 47%;
-  margin-right: -50%;
-}
-.acc_Container {
-  margin: 25px;
-  padding: 20px;
-  display: block;
-  position: relative;
-  background-color: white;
-  align-items: center;
-  position: relative;
-  width: 100%;
-  /* justify-content: center;
-  text-align: center; */
 }
 
 .responsive_Container {
@@ -125,4 +127,14 @@ p {
 
 .notes {
   width: 25%;
+}
+
+@media (max-width: 870px) {
+  .ux_link {
+    padding: 10px;
+    margin: 20px;
+    font-size: 13px;
+    color: white;
+    border: 1px solid white;
+  }
 }

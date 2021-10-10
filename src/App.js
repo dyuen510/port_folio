@@ -23,7 +23,6 @@ function App() {
           <Link to="/aboutme" className="link">
             About
           </Link>
-
           <Route exact path="/" component={Work} />
           <Route exact path="/uxDesign" component={Uxdesign} />
           <Route exact path="/aboutme" component={About} />
