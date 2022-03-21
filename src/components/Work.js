@@ -7,6 +7,9 @@ import Spotify from './images/spotify.png';
 import Dragongate from './images/dragongate.png';
 import Footer from './Footer.js';
 import NetFlix from './images/netflix.png';
+import Ers from './images/ers.PNG';
+import Cache from './images/CacheEmAll.PNG';
+
 
 
 const Work = () => {
@@ -27,6 +30,37 @@ const Work = () => {
         <div className='webProjects'>
           <div className='workGrid'>
           <a
+          href="https://github.com/JavaNextGen/project-1-dyuen510"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img className='rounded_corners' src={Ers} width="500" height="350" alt="img" />
+        
+        <div className='overlay overlay__blur'>
+            <div className='image__title'>Employee Reimbursement System</div>
+            <p className='image__description'>Role as Fullstack Developer. Backend development with Java, Javalin, JUnit for testing and Postgres. For frontend basic html, css, js and bootstrap.</p>
+            <p className='image__date'>December 2021 - January 2022</p>
+        </div>
+        </a>
+          </div>
+          <div className='workGrid'>
+          <a
+          href="https://github.com/CacheEmAll/Project3"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img className='rounded_corners' src={Cache} width="500" height="300" alt="img"/>
+        
+        <div className='overlay overlay__blur'>
+            <div className='image__title'>CacheEmAll Ecommerce</div>
+            <p className='image__description'>Primary role as front end developer working with Angular and typescript on frontpage, deals, wishlist and overall design of application.
+            Worked with a large team with daily team standups. Retrieved product data with pokeApi and user data with GCP Postgres in order to share database with every team. </p>
+            <p className='image__date'>February 2022 - March 2022</p>
+        </div>
+        </a>
+          </div>
+          <div className='workGrid'>
+          <a
           href="https://www.remineralize.org/"
           rel="noopener noreferrer"
           target="_blank"
@@ -37,7 +71,7 @@ const Work = () => {
             <div className='image__title'>Remineralize The Earth</div>
             <p className='image__description'>Updating resource directory, wordpress powered site, GIS map plugin,
             created tutorial on updating resource directory</p>
-            <p className='image__date'>Oct 2020 - Current</p>
+            <p className='image__date'>Oct 2020 - June 2021</p>
         </div>
         </a>
           </div>

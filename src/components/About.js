@@ -60,7 +60,7 @@ const About = () => {
        welcome, i'm david
       </p>
       <p className="aboutp">
-      I'm a front end web developer and a UX designer with a background in business that is passionate 
+      I'm a fullstack web developer with a background in business that is passionate 
       about creating as well as designing products that improves user experience.
       </p>
       <p className="aboutp">
