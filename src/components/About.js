@@ -4,7 +4,6 @@ import Self from "./images/self.png";
 import AboutImg1 from './images/aboutImg1.JPG';
 import AboutImg2 from './images/aboutImg2.jpg';
 import AboutImg3 from './images/aboutImg3.jpg';
-import AboutImg4 from './images/aboutImg4.jpg';
 import AboutImg5 from './images/aboutImg5.jpg';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -77,7 +76,7 @@ const About = () => {
       Download Resume
     </a>
 </button>
-  <p className='fileSize'>File Size: 78KB</p>
+  <p className='fileSize'>File Size: 144KB</p>
       </div>
       </div>
       <div className='midLine'>
@@ -95,10 +94,6 @@ const About = () => {
       <img
         src={AboutImg3}
         style={{ width: 250, height: 350, margin:'20px'}}
-      />
-      <img
-        src={AboutImg4}
-        style={{ width: 390, height: 280, margin:'20px'}}
       />
       <img
         src={AboutImg5}
